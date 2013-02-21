@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+	    	android:layout_width="22dp"
+	    	android:layout_height="fill_parent"
+	    	android:src="@drawable/logo"
+	    	style="@style/logoText"/>
+		<TextView  
+			android:id="@+id/registerTitle"
+		    android:layout_width="fill_parent" 
+		    style="@style/logoText"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/registerTitle"/>   
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:gravity="center" 
+	   	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView  
+		    android:textSize="18sp"
+		    android:textColor="@color/word"
+			android:layout_width="90dp"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/u_nametext"/>
+
+		<EditText
+		    android:id="@+id/u_nameEditText"
+		    android:layout_width="200dp"
+		    android:layout_height="wrap_content"
+		    android:singleLine="true" />
+	</LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pwdtext1"
+            android:textColor="@color/word"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pwdEditText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:gravity="center" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView  
+		    android:textSize="18sp"
+		    android:textColor="@color/word"
+			android:layout_width="90dp"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/pwdtext2"/>
+		<EditText
+			android:id="@+id/pwdEditText2"
+			android:password="true"
+			android:singleLine="true"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:gravity="center" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView  
+		    android:textSize="18sp"
+		    android:textColor="@color/word"
+			android:layout_width="90dp"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/emailtext"/>
+		<EditText
+			android:id="@+id/emailEditText"
+			android:singleLine="true"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:gravity="center" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<Button  
+			android:id="@+id/registerButton2"
+			android:layout_width="80dp"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/registerButton2"/>
+		<Button  
+			android:id="@+id/resetButton"
+			android:layout_width="80dp"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/resetButton"/>		    
+	</LinearLayout>			
+</LinearLayout>

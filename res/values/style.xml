@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="logoText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#6d6d6d</item>
+        <item name="android:background">@drawable/logo_text_shape</item>
+    </style>
+    <style name="myTheme" parent="android:Theme">
+        <item name="android:background">@drawable/shape</item>
+    </style>
+</resources>

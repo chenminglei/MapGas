@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:layout_width="22dp"
+            android:layout_height="fill_parent"
+            android:src = "@drawable/logo"
+            style="@style/logoText" />
+        <TextView 
+            android:layout_width="fill_parent"
+            style="@style/logoText"
+            android:layout_height="wrap_content"
+            android:text="@string/indexTitle" />
+   </LinearLayout>
+   <com.google.android.maps.MapView
+  		android:id="@+id/myMapView" android:layout_width="fill_parent"
+   		android:layout_height="410dp" android:clickable="true"
+   		android:apiKey="0n04nWE17szHBWDAfznv-AgFT21SLpIwfCujf_A"/>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal" android:gravity="center"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <ImageButton
+	    	android:id="@+id/MyImageButton" android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" android:src="@drawable/ok_button"/>
+	</LinearLayout>  	
+   
+
+</LinearLayout>

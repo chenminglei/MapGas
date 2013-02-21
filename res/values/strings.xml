@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MapOilActivity!</string>
+    <string name="app_name">加油小助手</string>
+    
+    <string name="registerTitle">加油小助手--用户注册</string>
+    <string name="uid">账号：</string><string name="pwd">密码：</string>
+    <string name="loginButton">登录</string>
+    <string name="registerButton">注册</string>
+   
+    
+    
+    
+    
+    <string name="u_nametext">用户名：</string>
+    <string name="pwdtext1">密码：</string>
+    <string name="pwdtext2">确认密码：</string>
+    <string name="emailtext">电子邮箱:</string>
+    <string name="registerButton2">立即注册</string>
+    <string name="resetButton">重置</string>
+    
+    <string name="searchButton">搜索</string>
+    <string name="stationname">加油站名称</string>
+    <string name="stationinfo">加油站描述</string>
+    <string name="oiltype">油的种类</string>
+    <string name="oilmoney">油价：</string>
+    <string name="oilLocation">加油站位置</string>
+    <string name="cbRemember">记住密码</string>
+    <string name="indexTitle">加油小助手</string>
+    
+    <string name="jyzName">加油站名称</string>
+    <string name="OilSort">加油种类</string>
+    <string name="Price">油价</string>
+    <string name="OilComp">加油站公司</string>
+    <string name="locationStr">加油站位置</string>
+    <string name="DisStr">总体评价</string>
+    <string name="oilTime">上传时间</string>
+    <string name="oilUserID">上传用户ID</string>
+
+</resources>

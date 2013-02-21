@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+    <LinearLayout 
+        android:id="@+id/favourite" android:orientation="vertical"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView  
+			android:id="@+id/indexTitle"
+		    android:layout_width="fill_parent" 
+		    style="@style/logoText"
+		    android:gravity="center"
+		    android:layout_height="wrap_content"
+		    android:text="我的收藏"/>
+		<ListView 
+			android:id="@+id/searchlistView01"       
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:choiceMode="singleChoice" />		    
+    </LinearLayout> <!-- 收藏面 -->
+    <LinearLayout 
+		android:id="@+id/search"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:gravity="center_horizontal"
+	    android:layout_height="wrap_content">
+		<TextView  
+			android:id="@+id/indexTitle"
+		    android:layout_width="fill_parent" 
+		    style="@style/logoText"
+		    android:gravity="center"
+		    android:layout_height="wrap_content"
+		    android:text="加油搜索"/>
+		<LinearLayout 
+			android:id="@+id/search"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:gravity="center_horizontal"
+		    android:layout_marginTop="10dp"
+		    android:layout_height="wrap_content">
+			<TextView  
+				android:gravity="left"
+				android:textColor="@color/word"
+				android:textSize="20sp"
+			    android:layout_width="80dp" 
+			    android:layout_height="wrap_content"
+			    android:text="关键字："/>
+			<EditText
+				android:id="@+id/infoValues"
+				android:layout_width="230dp"
+				android:layout_height="wrap_content"
+				android:singleLine="true"/>
+		</LinearLayout>		
+		<LinearLayout 
+			android:id="@+id/search"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:gravity="center"
+		    android:layout_marginTop="10dp"
+		    android:layout_height="wrap_content">
+			<TextView  
+				android:gravity="left"
+				android:textColor="@color/word"
+				android:textSize="20sp"
+			    android:layout_width="80dp" 
+			    android:layout_height="wrap_content"
+			    android:text="种类"/>
+			<Spinner 
+				android:id="@+id/mySort" 
+				android:layout_width="230dp"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>		
+		<LinearLayout 
+			android:id="@+id/search"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:gravity="center"
+		    android:layout_marginTop="10dp"
+		    android:layout_height="wrap_content">
+			<TextView  
+				android:gravity="left"
+				android:textColor="@color/word"
+				android:textSize="20sp"
+			    android:layout_width="80dp" 
+			    android:layout_height="wrap_content"
+			    android:text="价格:"/>
+			<EditText
+				android:id="@+id/infoPrice1"
+				android:layout_width="107dp"
+				android:layout_height="wrap_content"
+				android:phoneNumber="true"
+				android:singleLine="true"/>
+			<TextView  
+				android:gravity="center"
+				android:textColor="@color/word"
+				android:textSize="20sp"
+			    android:layout_width="15dp" 
+			    android:layout_height="wrap_content"
+			    android:text="--"/>				
+			<EditText
+				android:id="@+id/infoPrice2"
+				android:phoneNumber="true"
+				android:layout_width="108dp"
+				android:layout_height="wrap_content"
+				android:singleLine="true"/>				
+		</LinearLayout>		
+		<LinearLayout 
+			android:id="@+id/search"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:gravity="center"
+		    android:layout_marginTop="12dp"
+		    android:layout_height="wrap_content">
+			<ImageButton
+				android:id="@+id/searchButton"
+			   	android:layout_width="wrap_content" 
+			    android:layout_height="38dp"
+			    android:layout_marginRight="4dp"
+			    android:src="@drawable/search_button"/>		
+		</LinearLayout>					
+	</LinearLayout><!-- 搜索面 -->
+    <LinearLayout 
+		android:id="@+id/recommend"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView  
+			android:id="@+id/indexTitle"
+		    android:layout_width="fill_parent" 
+		    style="@style/logoText"
+		    android:gravity="center"
+		    android:layout_height="wrap_content"
+		    android:text="加油推荐"/>
+		<ListView 
+			android:id="@+id/searchlistView03"       
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:choiceMode="singleChoice" />		    
+	</LinearLayout>
+	
+    <!-- 上传界面 -->
+    <LinearLayout
+		android:id="@+id/update"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView  
+			android:id="@+id/indexTitle"
+		    android:layout_width="fill_parent" 
+		    style="@style/logoText"
+		    android:gravity="center"
+		    android:layout_height="wrap_content"
+		    android:text="上传加油信息"/>
+		<ScrollView 
+			android:id="@+id/scrollview"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="wrap_content"  
+		    android:scrollbars="vertical">   
+		    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/background"
+			    >
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    	android:orientation="horizontal"
+			    	android:gravity="center"
+			    	android:layout_width="fill_parent"
+			   	 	android:layout_height="wrap_content">
+				    <TextView 
+				    	android:layout_width="110dp"
+				    	android:layout_height="wrap_content"
+				    	android:textSize="18sp"
+					    android:textColor="@color/word"
+				    	android:text="@string/jyzName"
+				    	/>
+					<EditText 
+						android:id="@+id/jyzName"
+						android:textSize="18sp"
+						android:textColor="@color/textword2"
+					    android:layout_width="190dp" 
+					    android:layout_height="wrap_content"/>
+				</LinearLayout>   	
+			    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    android:orientation="horizontal"
+				    android:gravity="center"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content">
+				    <TextView 
+				    	android:layout_width="110dp"
+				    	android:layout_height="wrap_content"
+				    	android:textSize="18sp"
+					    android:textColor="@color/word"
+				    	android:text="@string/OilSort"
+				    	/>
+					<Spinner 
+						android:id="@+id/mySort2"
+						android:textColor="@color/textword2" 
+						android:layout_width="190dp"
+						android:layout_height="wrap_content"/>
+				</LinearLayout> 
+			    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    android:orientation="horizontal"
+				    android:gravity="center"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content">
+
+				    <TextView
+				        android:layout_width="110dp"
+				        android:layout_height="wrap_content"
+				        android:text="@string/Price"
+				        android:textColor="@color/word"
+				        android:textSize="18sp" />
+
+					<EditText  
+						android:id="@+id/oilPrice"
+						android:textSize="18sp"
+						android:textColor="@color/textword2"
+					    android:layout_width="190dp" 
+					    android:layout_height="wrap_content" />
+				</LinearLayout> 
+			    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    android:orientation="horizontal"
+				    android:gravity="center"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content">
+
+			        <TextView
+				        android:layout_width="110dp"
+				        android:layout_height="wrap_content"
+				        android:text="@string/OilComp"
+				        android:textColor="@color/word"
+				        android:textSize="18sp" />
+
+			        <EditText
+			            android:id="@+id/oilCompName"
+			            android:layout_width="190dp"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/textword2"
+			            android:textSize="18sp" />
+
+				</LinearLayout>
+
+			    <LinearLayout
+			        xmlns:android="http://schemas.android.com/apk/res/android"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:orientation="horizontal" >
+
+			        <TextView
+			            android:layout_width="110dp"
+			            android:layout_height="wrap_content"
+			            android:text="@string/locationStr"
+			            android:textColor="@color/word"
+			            android:textSize="18sp" />
+
+			        <EditText
+			            android:id="@+id/oilLocation"
+			            android:layout_width="190dp"
+			            android:layout_height="wrap_content"
+			            android:clickable="true"
+			            android:cursorVisible="false"
+			            android:editable="false"
+			            android:enabled="true"
+			            android:lines="2"
+			            android:text="点击获取我的经纬"
+			            android:textColor="@color/textword2"
+			            android:textSize="18sp" >
+
+			            <requestFocus />
+			        </EditText>
+			    </LinearLayout>
+				<LinearLayout
+			        xmlns:android="http://schemas.android.com/apk/res/android"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:orientation="horizontal" >
+
+			        <TextView
+			            android:layout_width="110dp"
+			            android:layout_height="wrap_content"
+			            android:text="@string/DisStr"
+			            android:textColor="@color/word"
+			            android:textSize="18sp" />
+
+			        <EditText
+			            android:id="@+id/oilDis"
+			            android:layout_width="190dp"
+			            android:layout_height="wrap_content"
+			            android:clickable="true"
+			            android:cursorVisible="false"
+			            android:editable="true"
+			            android:enabled="true"
+			            android:lines="4"
+			            android:textColor="@color/textword2"
+			            android:textSize="18sp" >
+
+			            <requestFocus />
+			        </EditText>
+			    </LinearLayout>			
+			    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    android:orientation="horizontal"
+				    android:gravity="center"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="30dp"> 
+				    <ImageButton   
+				    	android:id="@+id/updateButton" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="35dp"
+				    	android:src="@drawable/update_button"/>			    	 				    					    	 
+				</LinearLayout>
+			</LinearLayout> 
+		</ScrollView>
+	</LinearLayout>
+    
+</FrameLayout>

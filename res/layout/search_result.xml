@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <ImageView
+	    	android:layout_width="22dp"
+	    	android:layout_height="fill_parent"
+	    	android:src="@drawable/logo"
+	    	style="@style/logoText"/>
+		<TextView  
+			android:id="@+id/favouriteTitle"
+		    android:layout_width="fill_parent" 
+		    style="@style/logoText"
+		    android:layout_height="wrap_content" 
+		    android:text="@string/indexTitle"/>
+	</LinearLayout>   
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView  
+			android:id="@+id/searchResultTextView"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:textColor="@color/word"
+			android:textSize="20sp"/><!-- 鎼滅储缁撴灉 -->
+	</LinearLayout> 
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"><!-- 姘村钩鐨勭嚎鎬у竷灞€ -->
+	    <ImageButton   
+	    	android:id="@+id/previousButton" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="35dp"
+	    	android:src="@drawable/previous_button"/>	
+
+	    <ImageButton
+	        android:id="@+id/nextButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/next_button" />
+	
+	    <ImageButton   
+	    	android:id="@+id/backButton" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="35dp"
+	    	android:src="@drawable/back_button"/>	
+	</LinearLayout>
+	<ListView 
+		android:id="@+id/searchResultListView"       
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:choiceMode="singleChoice" />		 	
+</LinearLayout>
